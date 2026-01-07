@@ -142,6 +142,19 @@ header {
   padding-right: 30px;
 }
 
+header p {
+  font-size: 13px;       
+  color: #555;         
+  line-height: 1.4;      
+  margin-bottom: 10px;   
+}
+
+header h1 {
+  letter-spacing: 0.5px; 
+  font-variant: small-caps; 
+  font-weight: 600;        
+}
+
 ul.downloads {
   list-style:none;
   height:40px;
@@ -209,6 +222,10 @@ section {
   margin-left: 310px;
   padding-left: 40px;
   padding-bottom:50px;
+}
+
+section p, section ul {
+  max-width: 720px; /* lines won’t stretch beyond this width */
 }
 
 small {
