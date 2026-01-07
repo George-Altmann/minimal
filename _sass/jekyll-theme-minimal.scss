@@ -126,7 +126,7 @@ kbd {
 
 header {
   width:270px;
-  margin-top: 70px;
+  margin-top: 50px;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
@@ -147,6 +147,7 @@ header h1 {
 
 .topbar {
   width: 100%;
+  margin-top: 20px;
   height: 60px;               
   background-color: #a7c7b0;   
   color: white;           
@@ -158,6 +159,18 @@ header h1 {
   left: 0;
   z-index: 9999;  
   padding: 0 20px           
+}
+
+.topbar-nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.topbar-nav a:hover {
+  color: #a1d99b; 
 }
 
 
@@ -226,7 +239,7 @@ section {
   max-width: 760px;            
   float: right;
   padding-left: 80px;
-  padding-top: 80px;
+  padding-top: 60px;
   padding-bottom: 50px;
   box-sizing: border-box;      
 }
