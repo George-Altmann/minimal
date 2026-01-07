@@ -162,7 +162,7 @@ p a {
   top: 0;
   left: 0;
   z-index: 9999;  
-  padding: 0 300px 0 20px;
+  padding: 0 20px 0 20px;
 }
 
 .topbar-nav .spacer {
@@ -180,7 +180,12 @@ p a {
   font-size: 14px;
 }
 
-.topbar-nav a:not(:last-child)::after {
+.topbar-nav a.fake-spacer {
+  color: #1f4d2b;  
+  pointer-events: none;
+}
+
+.topbar-nav a:not(:last-child):not(.fake-space)::after {
   content: "";
   position: absolute;
   right: -10px;      
@@ -261,7 +266,7 @@ section {
   max-width: 760px;            
   float: right;
   padding-left: 80px;
-  padding-right: 80px;
+  padding-right: 60px;
   padding-top: 60px;
   padding-bottom: 50px;
   box-sizing: border-box;      
