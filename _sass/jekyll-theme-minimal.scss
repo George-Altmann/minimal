@@ -8,7 +8,7 @@ body {
   padding-left:40px;
   padding-right:40px;
   font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#727272;
+  color:#333;
   font-weight:400;
   overflow-x: hidden;
 }
@@ -148,8 +148,8 @@ header h1 {
 .topbar {
   width: 100%;
   margin-top: 0px;
-  height: 60px;               
-  background-color: #a7c7b0;   
+  height: 40px;               
+  background-color: #1f4d2b;   
   color: white;           
   display: flex;
   align-items: center;        
@@ -158,11 +158,12 @@ header h1 {
   top: 0;
   left: 0;
   z-index: 9999;  
-  padding: 20px 20px           
+  padding: 0px 20px;
+  padding-right: 20px;
 }
 
 .topbar-nav a {
-  color: white;
+  color: #f7f9f7 ;
   text-decoration: none;
   margin-left: 20px;
   font-weight: 500;
@@ -170,7 +171,7 @@ header h1 {
 }
 
 .topbar-nav a:hover {
-  color: #a1d99b; 
+  color: #cfe8d8; 
 }
 
 
