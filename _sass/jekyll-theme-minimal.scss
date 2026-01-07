@@ -165,12 +165,6 @@ p a {
   padding: 0 20px 0 20px;
 }
 
-.topbar-nav .spacer {
-  display: block;
-  width: 40px; 
-  flex-shrink: 0; 
-}
-
 .topbar-nav a {
   position: relative;
   color: #f7f9f7 ;
@@ -180,7 +174,7 @@ p a {
   font-size: 14px;
 }
 
-.topbar-nav a.fake-spacer {
+.topbar-nav a.fake-space{
   color: #1f4d2b;  
   pointer-events: none;
 }
