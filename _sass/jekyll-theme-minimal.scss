@@ -146,8 +146,7 @@ header h1 {
 }
 
 p a {
-    color: #296138; /* Change to whatever color you want */
-    text-decoration: underline; /* optional: keep underline for clarity */
+    color: #296138; 
 }
 
 .topbar {
@@ -164,6 +163,12 @@ p a {
   left: 0;
   z-index: 9999;  
   padding: 0 300px 0 20px;
+}
+
+.topbar-nav .spacer {
+  display: block;
+  width: 40px; 
+  flex-shrink: 0; 
 }
 
 .topbar-nav a {
@@ -256,6 +261,7 @@ section {
   max-width: 760px;            
   float: right;
   padding-left: 80px;
+  padding-right: 80px;
   padding-top: 60px;
   padding-bottom: 50px;
   box-sizing: border-box;      
