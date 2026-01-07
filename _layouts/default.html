@@ -21,8 +21,8 @@
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
 
-        <p class="meta">{{ site.description | default: site.github.project_tagline }}</p>
-        <p class="meta contact">{{ site.contactinfo | default: site.github.project_tagline }}</p>
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
+        <p>{{ site.contactinfo | default: site.github.project_tagline }}</p>
 
 
         {% if site.github.is_project_page %}
