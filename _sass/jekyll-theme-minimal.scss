@@ -39,12 +39,12 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#800020;
+  color:#1f4d2b;
   text-decoration:none;
 }
 
 a:hover, a:focus {
-  color:#069;
+  color:#458b58;
 }
 
 a small {
@@ -193,6 +193,8 @@ section {
   max-width:760px;
   width:100%;
   float:right;
+  border-left: 2px solid #e5e5e5;
+  padding-left: 40px;
   padding-bottom:50px;
 }
 
