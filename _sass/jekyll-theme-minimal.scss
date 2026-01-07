@@ -153,15 +153,16 @@ header h1 {
   color: white;           
   display: flex;
   align-items: center;        
-  justify-content: right;     
+  justify-content: flex-end;     
   position: fixed;
   top: 0;
   left: 0;
   z-index: 9999;  
-  padding-right: 150px;
+  padding: 0 60px 0 20px;
 }
 
 .topbar-nav a {
+  position: relative;
   color: #f7f9f7 ;
   text-decoration: none;
   margin-left: 20px;
@@ -172,12 +173,12 @@ header h1 {
 .topbar-nav a:not(:last-child)::after {
   content: "";
   position: absolute;
-  right: 0;
+  right: -10px;      
   top: 50%;
   transform: translateY(-50%);
   height: 60%;
   width: 1px;
-  background: #f7f9f7 ;
+  background: #f7f9f7;
 }
 
 .topbar-nav a:hover {
