@@ -179,7 +179,7 @@ p a {
   pointer-events: none;
 }
 
-.topbar-nav a:not(:first-child)::before {
+.topbar-nav a:not(:first-child):not(:last-child)::before {
   content: "";
   position: absolute;
   right: -10px;      
