@@ -15,6 +15,7 @@
   <body>
     <div class="topbar">
       <nav class="topbar-nav">
+        <a href="{{ '/' | relative_url }}">About</a>
         {% assign nav_pages = site.pages | where_exp:"p","p.nav == true" | sort: "nav_order" %}
         {% for page in nav_pages %}
           <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
