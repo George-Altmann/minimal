@@ -14,7 +14,8 @@
   </head>
   <body>
     <div class="topbar">
-      <nav class="topbar-nav">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="topbar-nav"><span class="nav-icon">☰</span><span class="sr-only">Menu</span></button>
+      <nav class="topbar-nav" id="topbar-nav">
         <a href="{{ '/' | relative_url }}">About</a>
         {% assign nav_pages = site.pages | where_exp:"p","p.nav == true" | sort: "nav_order" %}
         {% for page in nav_pages %}
@@ -59,6 +60,20 @@
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
+    <script>
+      (function(){
+        function onReady(fn){ if(document.readyState!='loading') fn(); else document.addEventListener('DOMContentLoaded', fn); }
+        onReady(function(){
+          var btn = document.querySelector('.nav-toggle');
+          var nav = document.getElementById('topbar-nav');
+          if(!btn || !nav) return;
+          btn.addEventListener('click', function(){
+            var opened = nav.classList.toggle('open');
+            btn.setAttribute('aria-expanded', opened ? 'true' : 'false');
+          });
+        });
+      })();
+    </script>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
   </body>
 </html>

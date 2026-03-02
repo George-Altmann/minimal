@@ -201,6 +201,37 @@ p a {
   color: #e8cfd1; 
 }
 
+/* Mobile nav toggle */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #f7f9f7;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 10px;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+@media screen and (max-width: 960px) {
+  .topbar { justify-content: space-between; padding: 0 12px; }
+  .nav-toggle { display: block; }
+  .topbar-nav { display: none; position: absolute; top: 55px; left: 0; right: 0; background: #70171b; padding: 10px 20px; flex-direction: column; align-items: flex-start; z-index: 9998; }
+  .topbar-nav.open { display: flex; }
+  .topbar-nav a { display: block; margin: 8px 0; color: #f7f9f7; font-size: 16px; text-decoration: none; }
+  .topbar-nav a::before { display: none; }
+  .topbar-nav a.fake-space { display: none; }
+}
+
 
 ul.downloads {
   list-style:none;
